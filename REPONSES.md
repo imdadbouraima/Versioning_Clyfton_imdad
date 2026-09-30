@@ -12,7 +12,7 @@ Q02: Sarah Benali
 commande: git blame depart -- src/format.js
 
 Q03: 
-commande: git stash 
+commande: 
 
 Q04: 
 commande: 
