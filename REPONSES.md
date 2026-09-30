@@ -20,14 +20,14 @@ commande: git log depart -p -i -G"api[_-]?key"
 Q05: 11544ab934db75adbe18115b8c463b52bdb4296a
 commande: git log depart --diff-filter=D --name-only --oneline
 
-Q06: 
-commande: 
+Q06: 17
+commande: git rev-list --count v0.2.0..v1.0.0
 
-Q07: 
-commande: 
+Q07: essai-perf
+commande: git for-each-ref refs/tags --format='%(refname:short) %(objecttype)'
 
-Q08: 
-commande: 
+Q08: experiment/cache-redis
+commande: git branch -r --no-merged depart ; git describe --tags $(git merge-base origin/experiment/cache-redis depart)
 
 Q09: 
 commande: 
