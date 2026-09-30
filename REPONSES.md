@@ -11,8 +11,8 @@ commande: git rev-list --count depart
 Q02: Sarah Benali
 commande: git blame depart -- src/format.js
 
-Q03: 
-commande: 
+Q03: 4459c91
+commande: git bisect run node scripts/controle-alertes.js
 
 Q04: 
 commande: 
