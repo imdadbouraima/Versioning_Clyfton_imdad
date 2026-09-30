@@ -14,11 +14,11 @@ commande: git blame depart -- src/format.js
 Q03: 4459c91
 commande: git bisect run node scripts/controle-alertes.js
 
-Q04: 
-commande: 
+Q04: sk_live_01de6ba0c9f4d846
+commande: git log depart -p -i -G"api[_-]?key"
 
-Q05: 
-commande: 
+Q05: 11544ab934db75adbe18115b8c463b52bdb4296a
+commande: git log depart --diff-filter=D --name-only --oneline
 
 Q06: 
 commande: 
