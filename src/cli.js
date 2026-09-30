@@ -4,9 +4,12 @@ import { chargerExemple } from './outils.js';
 import { versCsv } from './export.js';
 
 const stock = chargerExemple(new Stock());
-const commande = process.argv[2] ?? 'lister';
+const commande = process.argv[2] ?? 'bienvenue';
 
 switch (commande) {
+  case 'bienvenue':
+    console.log('Bienvenue dans StockLite !');
+    break;
   case 'lister':
     console.log(formaterTableau(stock.lister()));
     break;
