@@ -38,14 +38,14 @@ commande: git shortlog -sn depart
 Q11: 2026-03-24
 commande: git log -1 --format=%cs v1.0.0
 
-Q12: 
-commande: 
+Q12: feat(cli): bannière de démarrage
+commande: git log depart --oneline --grep="^Revert"
 
-Q13: 
-commande: 
+Q13: de5637a
+commande: git log depart --merges --oneline
 
-Q14: 
-commande: 
+Q14: 16
+commande: git diff --numstat v0.1.0 v1.0.0 -- src/stock.js
 
-Q15: 
-commande: 
+Q15: 6d6b920
+commande: git log depart --reverse --oneline -S"TODO: gérer les quantités négatives"
