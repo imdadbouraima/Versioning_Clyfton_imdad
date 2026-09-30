@@ -29,14 +29,14 @@ commande: git for-each-ref refs/tags --format='%(refname:short) %(objecttype)'
 Q08: experiment/cache-redis
 commande: git branch -r --no-merged depart ; git describe --tags $(git merge-base origin/experiment/cache-redis depart)
 
-Q09: 
-commande: 
+Q09: src/utils.js
+commande: git log depart --follow --name-status --oneline -- src/outils.js
 
-Q10: 
-commande: 
+Q10: Nathan Robin
+commande: git shortlog -sn depart
 
-Q11: 
-commande: 
+Q11: 2026-03-24
+commande: git log -1 --format=%cs v1.0.0
 
 Q12: 
 commande: 
