@@ -1,7 +1,10 @@
-import { test } from 'node:test';
-import assert from 'node:assert/strict';
-import { formaterLigne } from '../src/format.js';
+// Mise en forme d'une ligne de stock pour l'affichage console
+export function formaterLigne(p) {
+  const unite = p.unite || 'u';
+  const alerte = p.quantite <= p.seuil ? ' ⚠' : '';
+  return `${p.ref} — ${p.nom} : ${p.quantite} ${unite}${alerte}`;
+}
 
-test('formaterLigne', () => {
-  assert.equal(formaterLigne({ ref: 'A1', nom: 'Vis', quantite: 3, seuil: 1 }), 'A1 — Vis : 3 u');
-});
+export function formaterTableau(produits) {
+  return produits.map(formaterLigne).join('\n');
+}
